@@ -197,6 +197,7 @@
     background:var(--green-soft);border-radius:10px;padding:9px 11px;
   }
   .fix-good .fix-label{color:var(--green-mid)}
+  .fix-good .speak-target{align-items:flex-start}
   .fix-why{font-size:.86rem;color:var(--ink-soft);border-top:1px dashed var(--line);padding-top:9px}
   .fix-why .fix-label{color:var(--ink-mute)}
   @media (min-width:780px){
@@ -214,17 +215,23 @@
     box-shadow:var(--shadow);padding:14px 15px;display:flex;flex-direction:column;gap:6px;
   }
   .expr-no{
+    flex:0 0 auto;
     font-size:.68rem;font-weight:800;color:#fff;background:var(--green-mid);
     width:20px;height:20px;border-radius:6px;display:grid;place-items:center;line-height:1;
   }
-  .expr-line{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+  .expr-line{display:flex;align-items:center;gap:9px}
+  .expr-en{flex:1 1 auto;min-width:0}
+  .expr .expr-ko{padding-left:29px}
+  .expr-sub .expr-line{padding-left:29px}
+  .expr-sub .expr-ko{padding-left:29px}
+  .expr-x{align-self:flex-start;margin-left:29px}
   .expr-en{
     margin:0;font-family:"Iowan Old Style",Georgia,"Times New Roman",serif;
     font-size:1.08rem;font-weight:700;color:var(--green);line-height:1.4;
   }
   .expr-ko{margin:0;font-size:.88rem;color:var(--ink-soft)}
   .expr-ko b{color:var(--navy)}
-  .expr-x{display:inline-block;font-size:.74rem;color:var(--rose);background:var(--rose-bg);border-radius:6px;padding:2px 7px;margin-top:2px}
+  .expr-x{display:inline-block;font-size:.74rem;color:var(--rose);background:var(--rose-bg);border-radius:6px;padding:2px 7px;margin-top:2px;align-self:flex-start}
   .expr-sub{padding-top:6px;border-top:1px dashed var(--line)}
 
   /* ---------- tasks ---------- */
@@ -263,6 +270,10 @@
   body.no-tts .tts-warn{display:block}
   body.no-tts .speak{opacity:.55}
 
+  @media (max-width:560px){
+    .toc{flex-wrap:wrap;overflow:visible}
+    .toc a{font-size:.78rem;padding:7px 11px}
+  }
   @media (max-width:480px){
     .wrap{padding:0 14px 60px}
     .hero{padding-top:26px}
@@ -766,11 +777,9 @@
     <ul class="expr-grid">
 
       <li class="expr">
-        <div class="expr-line">
-          <span class="expr-no">1</span>
-        </div>
         <div class="speak-target">
           <div class="expr-line">
+            <span class="expr-no">1</span>
             <p class="expr-en say" lang="en">half an hour</p>
             <button class="speak" type="button" aria-label="표현 듣기">🔊 듣기</button>
           </div>
@@ -786,11 +795,9 @@
       </li>
 
       <li class="expr">
-        <div class="expr-line">
-          <span class="expr-no">2</span>
-        </div>
         <div class="speak-target">
           <div class="expr-line">
+            <span class="expr-no">2</span>
             <p class="expr-en say" lang="en">make small talk</p>
             <button class="speak" type="button" aria-label="표현 듣기">🔊 듣기</button>
           </div>
@@ -800,11 +807,9 @@
       </li>
 
       <li class="expr">
-        <div class="expr-line">
-          <span class="expr-no">3</span>
-        </div>
         <div class="speak-target">
           <div class="expr-line">
+            <span class="expr-no">3</span>
             <p class="expr-en say" lang="en">place an order with ~</p>
             <button class="speak" type="button" aria-label="표현 듣기">🔊 듣기</button>
           </div>
@@ -813,11 +818,9 @@
       </li>
 
       <li class="expr">
-        <div class="expr-line">
-          <span class="expr-no">4</span>
-        </div>
         <div class="speak-target">
           <div class="expr-line">
+            <span class="expr-no">4</span>
             <p class="expr-en say" lang="en">still in production</p>
             <button class="speak" type="button" aria-label="표현 듣기">🔊 듣기</button>
           </div>
@@ -826,11 +829,9 @@
       </li>
 
       <li class="expr">
-        <div class="expr-line">
-          <span class="expr-no">5</span>
-        </div>
         <div class="speak-target">
           <div class="expr-line">
+            <span class="expr-no">5</span>
             <p class="expr-en say" lang="en">knowing and doing are different</p>
             <button class="speak" type="button" aria-label="표현 듣기">🔊 듣기</button>
           </div>
@@ -839,11 +840,9 @@
       </li>
 
       <li class="expr">
-        <div class="expr-line">
-          <span class="expr-no">6</span>
-        </div>
         <div class="speak-target">
           <div class="expr-line">
+            <span class="expr-no">6</span>
             <p class="expr-en say" lang="en">read the situation</p>
             <button class="speak" type="button" aria-label="표현 듣기">🔊 듣기</button>
           </div>
@@ -852,11 +851,9 @@
       </li>
 
       <li class="expr">
-        <div class="expr-line">
-          <span class="expr-no">7</span>
-        </div>
         <div class="speak-target">
           <div class="expr-line">
+            <span class="expr-no">7</span>
             <p class="expr-en say" lang="en">wrap up</p>
             <button class="speak" type="button" aria-label="표현 듣기">🔊 듣기</button>
           </div>
@@ -865,11 +862,9 @@
       </li>
 
       <li class="expr">
-        <div class="expr-line">
-          <span class="expr-no">8</span>
-        </div>
         <div class="speak-target">
           <div class="expr-line">
+            <span class="expr-no">8</span>
             <p class="expr-en say" lang="en">It's the same as garbage</p>
             <button class="speak" type="button" aria-label="표현 듣기">🔊 듣기</button>
           </div>
