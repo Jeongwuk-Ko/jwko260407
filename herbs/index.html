@@ -252,8 +252,9 @@
 
   /* ── footer ── */
   footer{margin-top:34px; padding-top:16px; border-top:1px solid var(--line)}
-  .src summary{font-size:.76rem; font-weight:700; color:var(--ink3); cursor:pointer; min-height:34px; display:flex; align-items:center}
-  .src p{margin:8px 0 0; font-size:.76rem; color:var(--ink3); line-height:1.7; white-space:pre-line}
+  .src{background:var(--paper2); border:1px solid var(--line); border-radius:14px; padding:14px 15px}
+  .src .srclabel{margin:0 0 7px; font-size:.71rem; font-weight:800; letter-spacing:.11em; color:var(--green2)}
+  .src p{margin:0; font-size:.76rem; color:var(--ink2); line-height:1.75; white-space:pre-line}
   .src .docno{margin-top:8px; font-weight:700; color:var(--green2); font-size:.74rem}
   .src .revnote{margin-top:8px; font-size:.72rem; color:#9AA69D; line-height:1.7}
   .foot-note{margin:14px 0 0; font-size:.72rem; color:#98A49B; text-align:center}
@@ -307,12 +308,12 @@
   <main id="main"></main>
 
   <footer>
-    <details class="src">
-      <summary>원문 안내 · 문서번호 보기</summary>
+    <div class="src">
+      <p class="srclabel">원문 안내</p>
       <p id="notice"></p>
       <p class="docno">문서번호 260806 · 효능효과_원물이름별</p>
       <p class="revnote">검수 메모 · 스캔 원문의 표기를 그대로 살렸습니다. 원문에 적힌 ‘치염’, ‘황산화’, ‘식용증진’, ‘피바넌(장두콩)’, ‘연방’, ‘껍질’ 등은 표준 명칭과 달라도 고치지 않았습니다. ‘씀바귀’는 원물 표의 인쇄 상태가 흐려 ‘씀/쑴’이 분간되지 않아 효능별 표의 표기로 두었고, 검색에서는 쑴·숨으로도 찾힙니다.</p>
-    </details>
+    </div>
     <p class="foot-note">이 사전은 참고용 정리본입니다. 질병의 진단·치료는 의료기관에 문의하세요.</p>
   </footer>
 </div>
