@@ -366,6 +366,7 @@ function choOf(str){
 }
 function initialOf(name){
   var c = choOf(name).charAt(0);
+  if ("ㄲㄸㅃㅆㅉ".indexOf(c) >= 0) c = "ㄱㄷㅂㅅㅈ".charAt("ㄲㄸㅃㅆㅉ".indexOf(c));
   return INITIALS.indexOf(c) >= 0 ? c : "기타";
 }
 function norm(s){ return String(s).replace(/\s+/g,"").toLowerCase(); }
