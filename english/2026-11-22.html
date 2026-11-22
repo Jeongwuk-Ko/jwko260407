@@ -251,13 +251,16 @@
     background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
     box-shadow:var(--shadow);padding:14px 15px;display:flex;flex-direction:column;gap:6px;
   }
+  .expr-body{display:flex;flex-direction:column;gap:6px}
   .expr-head{display:flex;align-items:flex-start;gap:9px}
   .expr-head .speak-target{flex:1 1 auto;min-width:0}
   .expr-head .say,.expr-head .expr-en{flex:0 1 auto}
+  .expr-foot{display:flex;align-items:center;justify-content:space-between;gap:10px}
   .expr-no{
     flex:0 0 auto;
     font-size:.68rem;font-weight:800;color:#fff;background:var(--green-mid);
     width:20px;height:20px;border-radius:6px;display:grid;place-items:center;line-height:1;
+    margin-top:3px;
   }
   .expr-en{
     margin:0;font-family:"Iowan Old Style",Georgia,"Times New Roman",serif;
@@ -265,6 +268,7 @@
   }
   .expr-ko{margin:0;padding-left:29px;font-size:.88rem;color:var(--ink-soft)}
   .expr-ko b{color:var(--navy)}
+  .expr-foot .speak{margin-bottom:1px}
 
   /* ---------- tasks ---------- */
   .tasks{list-style:none;counter-reset:t;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
@@ -695,31 +699,37 @@
 
     <ul class="expr-grid">
       <li class="expr">
-        <div class="expr-head"><span class="expr-no">1</span>
-          <div class="speak-target">
+        <div class="speak-target expr-body">
+          <div class="expr-head"><span class="expr-no">1</span>
             <p class="expr-en" lang="en">It was out of stock at both stores.</p>
+          </div>
+          <div class="expr-foot">
+            <p class="expr-ko">두 곳 다 <b>재고가 없었어요</b>.</p>
             <button class="speak" type="button" aria-label="표현 듣기">🔊 듣기</button>
           </div>
         </div>
-        <p class="expr-ko">두 곳 다 <b>재고가 없었어요</b>.</p>
       </li>
       <li class="expr">
-        <div class="expr-head"><span class="expr-no">2</span>
-          <div class="speak-target">
+        <div class="speak-target expr-body">
+          <div class="expr-head"><span class="expr-no">2</span>
             <p class="expr-en" lang="en">My daughter said she didn't need a substitute.</p>
+          </div>
+          <div class="expr-foot">
+            <p class="expr-ko">딸이 <b>대체품은 필요 없다</b>고 했어요.</p>
             <button class="speak" type="button" aria-label="표현 듣기">🔊 듣기</button>
           </div>
         </div>
-        <p class="expr-ko">딸이 <b>대체품은 필요 없다</b>고 했어요.</p>
       </li>
       <li class="expr">
-        <div class="expr-head"><span class="expr-no">3</span>
-          <div class="speak-target">
+        <div class="speak-target expr-body">
+          <div class="expr-head"><span class="expr-no">3</span>
             <p class="expr-en" lang="en">I'm trying to focus on what I can control.</p>
+          </div>
+          <div class="expr-foot">
+            <p class="expr-ko">제가 <b>할 수 있는 것에 집중</b>하려고요.</p>
             <button class="speak" type="button" aria-label="표현 듣기">🔊 듣기</button>
           </div>
         </div>
-        <p class="expr-ko">제가 <b>할 수 있는 것에 집중</b>하려고요.</p>
       </li>
     </ul>
   </section>
